@@ -166,7 +166,7 @@ public class MainMenu extends Activity {
                 boolean isFirstRun = sharedPref.getBoolean(
                         "is_first_run", true);
                 if (isFirstRun) {
-                    createFirstUseDialog().show();
+                    runStartUpNode(StartUpNode.HasNfc);
                 } else {
                     runStartUpNode(StartUpNode.HasNfc);
                 }
